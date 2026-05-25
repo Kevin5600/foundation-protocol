@@ -1,0 +1,57 @@
+# Foundation Protocol
+
+[English](README.md) | [中文](README.zh.md) | [한국어](README.ko.md) | [日本語](README.ja.md) | Español | [Tiếng Việt](README.vi.md)
+
+[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE)
+
+Un runtime de Python para la colaboración de IA multi-entidad — agentes, humanos y herramientas en una capa de protocolo compartida.
+
+> [AI-Link-Net](https://github.com/FoundationAgents/ai-link-net) es una aplicación full-stack construida sobre este protocolo.
+
+## Características
+
+- **Modelo de entidad unificado** — agentes, humanos, herramientas y servicios comparten un sistema común de identidad y direccionamiento
+- **Sesiones multipartitas** — colaboración estructurada con gestión estricta del ciclo de vida y reproducción de eventos
+- **Políticas y gobernanza** — hooks de checkpoint con registro de procedencia para confianza y control de acceso
+- **Comercio y pagos** — contratos, custodia, liquidación y resolución de disputas mediante máquinas de estado
+- **Federación** — enrutamiento de entidades locales y remotas a través de nodos host distribuidos
+
+## Instalación
+
+Instalar como dependencia git:
+
+```bash
+pip install "foundation-protocol @ git+https://github.com/FoundationAgents/foundation-protocol.git"
+```
+
+## Uso
+
+```python
+import asyncio
+from fp import EntityKind, Host, Message, MessageKind
+
+async def main():
+    host = Host(name="LocalHost")
+
+    alice = host.register_entity(name="Alice", kind=EntityKind.HUMAN)
+    bot = host.register_entity(name="Bot", kind=EntityKind.AGENT)
+
+    await alice.send_message(
+        to=bot.entity_card,
+        message=Message(kind=MessageKind.TEXT, payload={"text": "Hello!"}),
+    )
+
+asyncio.run(main())
+```
+
+Consulte el directorio [`example/`](example/) para más escenarios, incluyendo mensajería entre hosts, integración de herramientas MCP y flujos de comercio.
+
+## Documentación
+
+- [Especificación del protocolo (Draft)](docs/foundation-protocol-spec-draft.md)
+- [Diseño de checkpoints](docs/checkpoint-design.md)
+- [Protocolo de comercio y pagos](docs/Trade&Trust-Payment-Protocol.md)
+
+## Licencia
+
+MIT

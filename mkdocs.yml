@@ -1,0 +1,9 @@
+site_name: Foundation Protocol
+site_description: Foundation Protocol reference Python runtime
+repo_url: https://github.com/FoundationAgents/foundation-protocol
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md

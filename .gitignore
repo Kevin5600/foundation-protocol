@@ -1,0 +1,68 @@
+# macOS
+.DS_Store
+
+# Local environment
+.env
+.env.*
+.python-version
+
+# Editors
+.vscode/
+.idea/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test/cache tools
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build/distribution
+build/
+dist/
+*.egg-info/
+
+# Documentation build output
+/site/
+
+# Virtual environment
+.venv/
+venv/
+
+# Agent tooling
+.claude/
+.codex/
+.worktree/
+
+# Local git worktrees
+.worktrees/
+
+# Runtime logs
+logs/
+*.log
+
+# Node.js / frontend artifacts
+node_modules/
+**/.vite/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+.playwright-mcp/
+
+# Local workspace
+reference/
+.fp-demo/
