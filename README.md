@@ -2,7 +2,7 @@
 
 English | [中文](README.zh.md) | [한국어](README.ko.md) | [日本語](README.ja.md) | [Español](README.es.md) | [Tiếng Việt](README.vi.md)
 
-[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE) [![arXiv](https://img.shields.io/badge/arXiv-2605.23218-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.23218) [![HuggingFace](https://img.shields.io/badge/🤗-Paper-yellow)](https://huggingface.co/papers/2605.23218)
+[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE) [![Docs](https://img.shields.io/badge/docs-online-5b3fb6?logo=materialformkdocs&logoColor=white)](https://foundationagents.github.io/foundation-protocol/) [![arXiv](https://img.shields.io/badge/arXiv-2605.23218-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.23218) [![HuggingFace](https://img.shields.io/badge/🤗-Paper-yellow)](https://huggingface.co/papers/2605.23218)
 
 A Python runtime for multi-entity AI collaboration — agents, humans, and tools on a shared protocol layer.
 
@@ -42,7 +42,7 @@ async def main():
 
     await alice.send_message(
         to=bot.entity_card,
-        message=Message(kind=MessageKind.TEXT, payload={"text": "Hello!"}),
+        message=Message(kind=MessageKind.INVOKE, payload={"text": "Hello!"}),
     )
 
 asyncio.run(main())
@@ -52,9 +52,12 @@ See the [`example/`](example/) directory for more scenarios including cross-host
 
 ## Documentation
 
-- [Protocol Spec (Draft)](docs/foundation-protocol-spec-draft.md)
-- [Checkpoint Design](docs/checkpoint-design.md)
-- [Trade & Payment Protocol](docs/Trade&Trust-Payment-Protocol.md)
+Full documentation is published at [foundationagents.github.io/foundation-protocol](https://foundationagents.github.io/foundation-protocol/). Quick links:
+
+- [Quickstart](docs/develop/quickstart.md) — install and run a two-entity exchange
+- [Checkpoint Pipeline](docs/learn/checkpoint.md) — the trust and governance seam
+- [Trade & Trust](docs/trade-and-trust/index.md) — contracts, arbitration, reputation
+- [Security Notes](docs/security/index.md) — known boundaries and risks
 
 ## License
 

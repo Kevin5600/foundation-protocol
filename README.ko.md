@@ -2,7 +2,7 @@
 
 [English](README.md) | [中文](README.zh.md) | 한국어 | [日本語](README.ja.md) | [Español](README.es.md) | [Tiếng Việt](README.vi.md)
 
-[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE) [![arXiv](https://img.shields.io/badge/arXiv-2605.23218-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.23218) [![HuggingFace](https://img.shields.io/badge/🤗-Paper-yellow)](https://huggingface.co/papers/2605.23218)
+[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE) [![Docs](https://img.shields.io/badge/docs-online-5b3fb6?logo=materialformkdocs&logoColor=white)](https://foundationagents.github.io/foundation-protocol/) [![arXiv](https://img.shields.io/badge/arXiv-2605.23218-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.23218) [![HuggingFace](https://img.shields.io/badge/🤗-Paper-yellow)](https://huggingface.co/papers/2605.23218)
 
 다중 엔티티 AI 협업을 위한 Python 런타임 — 에이전트, 인간, 도구가 하나의 프로토콜 레이어에서 함께 작동합니다.
 
@@ -42,7 +42,7 @@ async def main():
 
     await alice.send_message(
         to=bot.entity_card,
-        message=Message(kind=MessageKind.TEXT, payload={"text": "Hello!"}),
+        message=Message(kind=MessageKind.INVOKE, payload={"text": "Hello!"}),
     )
 
 asyncio.run(main())
@@ -52,9 +52,12 @@ asyncio.run(main())
 
 ## 문서
 
-- [프로토콜 사양 (Draft)](docs/foundation-protocol-spec-draft.md)
-- [체크포인트 설계](docs/checkpoint-design.md)
-- [거래 및 결제 프로토콜](docs/Trade&Trust-Payment-Protocol.md)
+전체 문서는 [foundationagents.github.io/foundation-protocol](https://foundationagents.github.io/foundation-protocol/)에서 확인할 수 있습니다. 빠른 링크:
+
+- [퀵스타트](docs/develop/quickstart.md) — 설치 후 두 엔티티 메시지 교환 실행
+- [체크포인트 파이프라인](docs/learn/checkpoint.md) — 신뢰와 거버넌스의 핵심
+- [거래 및 신뢰](docs/trade-and-trust/index.md) — 계약, 중재, 평판
+- [보안 노트](docs/security/index.md) — 알려진 경계와 위험
 
 ## 라이선스
 

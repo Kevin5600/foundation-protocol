@@ -2,7 +2,7 @@
 
 [English](README.md) | [中文](README.zh.md) | [한국어](README.ko.md) | 日本語 | [Español](README.es.md) | [Tiếng Việt](README.vi.md)
 
-[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE) [![arXiv](https://img.shields.io/badge/arXiv-2605.23218-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.23218) [![HuggingFace](https://img.shields.io/badge/🤗-Paper-yellow)](https://huggingface.co/papers/2605.23218)
+[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE) [![Docs](https://img.shields.io/badge/docs-online-5b3fb6?logo=materialformkdocs&logoColor=white)](https://foundationagents.github.io/foundation-protocol/) [![arXiv](https://img.shields.io/badge/arXiv-2605.23218-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.23218) [![HuggingFace](https://img.shields.io/badge/🤗-Paper-yellow)](https://huggingface.co/papers/2605.23218)
 
 マルチエンティティAIコラボレーションのためのPythonランタイム — エージェント、人間、ツールが共通のプロトコルレイヤー上で連携します。
 
@@ -42,7 +42,7 @@ async def main():
 
     await alice.send_message(
         to=bot.entity_card,
-        message=Message(kind=MessageKind.TEXT, payload={"text": "Hello!"}),
+        message=Message(kind=MessageKind.INVOKE, payload={"text": "Hello!"}),
     )
 
 asyncio.run(main())
@@ -52,9 +52,12 @@ asyncio.run(main())
 
 ## ドキュメント
 
-- [プロトコル仕様 (Draft)](docs/foundation-protocol-spec-draft.md)
-- [チェックポイント設計](docs/checkpoint-design.md)
-- [取引・決済プロトコル](docs/Trade&Trust-Payment-Protocol.md)
+完全なドキュメントは [foundationagents.github.io/foundation-protocol](https://foundationagents.github.io/foundation-protocol/) で公開されています。クイックリンク：
+
+- [クイックスタート](docs/develop/quickstart.md) — インストールして2エンティティ間でメッセージ送受信
+- [チェックポイントパイプライン](docs/learn/checkpoint.md) — 信頼とガバナンスの中核
+- [取引と信頼](docs/trade-and-trust/index.md) — 契約、仲裁、評価
+- [セキュリティノート](docs/security/index.md) — 既知の境界とリスク
 
 ## ライセンス
 

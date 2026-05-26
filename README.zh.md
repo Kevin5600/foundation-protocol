@@ -2,7 +2,7 @@
 
 [English](README.md) | 中文 | [한국어](README.ko.md) | [日本語](README.ja.md) | [Español](README.es.md) | [Tiếng Việt](README.vi.md)
 
-[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE) [![arXiv](https://img.shields.io/badge/arXiv-2605.23218-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.23218) [![HuggingFace](https://img.shields.io/badge/🤗-Paper-yellow)](https://huggingface.co/papers/2605.23218)
+[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE) [![Docs](https://img.shields.io/badge/docs-online-5b3fb6?logo=materialformkdocs&logoColor=white)](https://foundationagents.github.io/foundation-protocol/) [![arXiv](https://img.shields.io/badge/arXiv-2605.23218-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.23218) [![HuggingFace](https://img.shields.io/badge/🤗-Paper-yellow)](https://huggingface.co/papers/2605.23218)
 
 多实体 AI 协作的 Python 运行时 —— 让 Agent、人类和工具在统一协议层上协同工作。
 
@@ -42,7 +42,7 @@ async def main():
 
     await alice.send_message(
         to=bot.entity_card,
-        message=Message(kind=MessageKind.TEXT, payload={"text": "Hello!"}),
+        message=Message(kind=MessageKind.INVOKE, payload={"text": "Hello!"}),
     )
 
 asyncio.run(main())
@@ -52,9 +52,12 @@ asyncio.run(main())
 
 ## 文档
 
-- [协议规范 (Draft)](docs/foundation-protocol-spec-draft.md)
-- [检查点设计](docs/checkpoint-design.md)
-- [交易与支付协议](docs/Trade&Trust-Payment-Protocol.md)
+完整文档发布在 [foundationagents.github.io/foundation-protocol](https://foundationagents.github.io/foundation-protocol/)。快速链接：
+
+- [快速开始](docs/develop/quickstart.md) —— 安装并运行双实体消息收发
+- [检查点流水线](docs/learn/checkpoint.md) —— 信任与治理的核心抓手
+- [交易与信任](docs/trade-and-trust/index.md) —— 合约、仲裁与声誉
+- [安全说明](docs/security/index.md) —— 当前的边界与已知风险
 
 ## 许可证
 

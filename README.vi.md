@@ -2,7 +2,7 @@
 
 [English](README.md) | [中文](README.zh.md) | [한국어](README.ko.md) | [日本語](README.ja.md) | [Español](README.es.md) | Tiếng Việt
 
-[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE) [![arXiv](https://img.shields.io/badge/arXiv-2605.23218-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.23218) [![HuggingFace](https://img.shields.io/badge/🤗-Paper-yellow)](https://huggingface.co/papers/2605.23218)
+[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE) [![Docs](https://img.shields.io/badge/docs-online-5b3fb6?logo=materialformkdocs&logoColor=white)](https://foundationagents.github.io/foundation-protocol/) [![arXiv](https://img.shields.io/badge/arXiv-2605.23218-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.23218) [![HuggingFace](https://img.shields.io/badge/🤗-Paper-yellow)](https://huggingface.co/papers/2605.23218)
 
 Runtime Python cho cộng tác AI đa thực thể — agent, con người và công cụ hoạt động trên một lớp giao thức chung.
 
@@ -42,7 +42,7 @@ async def main():
 
     await alice.send_message(
         to=bot.entity_card,
-        message=Message(kind=MessageKind.TEXT, payload={"text": "Hello!"}),
+        message=Message(kind=MessageKind.INVOKE, payload={"text": "Hello!"}),
     )
 
 asyncio.run(main())
@@ -52,9 +52,12 @@ Xem thư mục [`example/`](example/) để biết thêm các tình huống bao 
 
 ## Tài liệu
 
-- [Đặc tả giao thức (Draft)](docs/foundation-protocol-spec-draft.md)
-- [Thiết kế checkpoint](docs/checkpoint-design.md)
-- [Giao thức giao dịch và thanh toán](docs/Trade&Trust-Payment-Protocol.md)
+Tài liệu đầy đủ được xuất bản tại [foundationagents.github.io/foundation-protocol](https://foundationagents.github.io/foundation-protocol/). Liên kết nhanh:
+
+- [Khởi động nhanh](docs/develop/quickstart.md) — cài đặt và chạy trao đổi giữa hai thực thể
+- [Pipeline checkpoint](docs/learn/checkpoint.md) — trục tin cậy và quản trị
+- [Giao dịch và tin cậy](docs/trade-and-trust/index.md) — hợp đồng, trọng tài, danh tiếng
+- [Ghi chú bảo mật](docs/security/index.md) — ranh giới và rủi ro đã biết
 
 ## Giấy phép
 
