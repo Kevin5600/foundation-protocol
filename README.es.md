@@ -2,7 +2,7 @@
 
 [English](README.md) | [中文](README.zh.md) | [한국어](README.ko.md) | [日本語](README.ja.md) | Español | [Tiếng Việt](README.vi.md)
 
-[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE) [![arXiv](https://img.shields.io/badge/arXiv-2605.23218-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.23218) [![HuggingFace](https://img.shields.io/badge/🤗-Paper-yellow)](https://huggingface.co/papers/2605.23218)
 
 Un runtime de Python para la colaboración de IA multi-entidad — agentes, humanos y herramientas en una capa de protocolo compartida.
 
@@ -15,6 +15,10 @@ Un runtime de Python para la colaboración de IA multi-entidad — agentes, huma
 - **Políticas y gobernanza** — hooks de checkpoint con registro de procedencia para confianza y control de acceso
 - **Comercio y pagos** — contratos, custodia, liquidación y resolución de disputas mediante máquinas de estado
 - **Federación** — enrutamiento de entidades locales y remotas a través de nodos host distribuidos
+
+## Manifiesto
+
+https://github.com/user-attachments/assets/ceab2515-b8f2-47ec-8d7f-10452759c32a
 
 ## Instalación
 

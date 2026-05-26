@@ -2,7 +2,7 @@
 
 [English](README.md) | [中文](README.zh.md) | 한국어 | [日本語](README.ja.md) | [Español](README.es.md) | [Tiếng Việt](README.vi.md)
 
-[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE) [![arXiv](https://img.shields.io/badge/arXiv-2605.23218-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.23218) [![HuggingFace](https://img.shields.io/badge/🤗-Paper-yellow)](https://huggingface.co/papers/2605.23218)
 
 다중 엔티티 AI 협업을 위한 Python 런타임 — 에이전트, 인간, 도구가 하나의 프로토콜 레이어에서 함께 작동합니다.
 
@@ -15,6 +15,10 @@
 - **정책 및 거버넌스** — 신뢰와 접근 제어를 위한 체크포인트 훅 및 출처 기록
 - **거래 및 결제** — 상태 머신 기반의 계약, 에스크로, 정산 및 분쟁 해결
 - **페더레이션** — 분산 호스트 노드 간 로컬 및 원격 엔티티 라우팅
+
+## 선언문
+
+https://github.com/user-attachments/assets/ceab2515-b8f2-47ec-8d7f-10452759c32a
 
 ## 설치
 

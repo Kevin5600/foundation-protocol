@@ -2,7 +2,7 @@
 
 English | [中文](README.zh.md) | [한국어](README.ko.md) | [日本語](README.ja.md) | [Español](README.es.md) | [Tiếng Việt](README.vi.md)
 
-[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE) [![arXiv](https://img.shields.io/badge/arXiv-2605.23218-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.23218) [![HuggingFace](https://img.shields.io/badge/🤗-Paper-yellow)](https://huggingface.co/papers/2605.23218)
 
 A Python runtime for multi-entity AI collaboration — agents, humans, and tools on a shared protocol layer.
 
@@ -15,6 +15,10 @@ A Python runtime for multi-entity AI collaboration — agents, humans, and tools
 - **Policy & governance** — checkpoint hooks with provenance recording for trust and access control
 - **Trade & payment** — contracts, escrow, settlement, and dispute resolution via state machines
 - **Federation** — local and remote entity routing across distributed host nodes
+
+## Manifesto
+
+https://github.com/user-attachments/assets/ceab2515-b8f2-47ec-8d7f-10452759c32a
 
 ## Installation
 

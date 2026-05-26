@@ -2,7 +2,7 @@
 
 [English](README.md) | 中文 | [한국어](README.ko.md) | [日本語](README.ja.md) | [Español](README.es.md) | [Tiếng Việt](README.vi.md)
 
-[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE) [![arXiv](https://img.shields.io/badge/arXiv-2605.23218-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.23218) [![HuggingFace](https://img.shields.io/badge/🤗-Paper-yellow)](https://huggingface.co/papers/2605.23218)
 
 多实体 AI 协作的 Python 运行时 —— 让 Agent、人类和工具在统一协议层上协同工作。
 
@@ -15,6 +15,10 @@
 - **策略与治理** —— 检查点钩子与溯源记录，用于信任和访问控制
 - **交易与支付** —— 合约、托管、结算与争议解决，基于状态机驱动
 - **联邦路由** —— 跨分布式 Host 节点的本地与远程实体路由
+
+## 宣言
+
+https://github.com/user-attachments/assets/ceab2515-b8f2-47ec-8d7f-10452759c32a
 
 ## 安装
 

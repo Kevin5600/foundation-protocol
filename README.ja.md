@@ -2,7 +2,7 @@
 
 [English](README.md) | [中文](README.zh.md) | [한국어](README.ko.md) | 日本語 | [Español](README.es.md) | [Tiếng Việt](README.vi.md)
 
-[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE) [![arXiv](https://img.shields.io/badge/arXiv-2605.23218-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.23218) [![HuggingFace](https://img.shields.io/badge/🤗-Paper-yellow)](https://huggingface.co/papers/2605.23218)
 
 マルチエンティティAIコラボレーションのためのPythonランタイム — エージェント、人間、ツールが共通のプロトコルレイヤー上で連携します。
 
@@ -15,6 +15,10 @@
 - **ポリシーとガバナンス** — 信頼とアクセス制御のためのチェックポイントフックと来歴記録
 - **取引と決済** — ステートマシンによる契約、エスクロー、精算、紛争解決
 - **フェデレーション** — 分散ホストノード間のローカル・リモートエンティティルーティング
+
+## マニフェスト
+
+https://github.com/user-attachments/assets/ceab2515-b8f2-47ec-8d7f-10452759c32a
 
 ## インストール
 

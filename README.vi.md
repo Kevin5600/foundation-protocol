@@ -2,7 +2,7 @@
 
 [English](README.md) | [中文](README.zh.md) | [한국어](README.ko.md) | [日本語](README.ja.md) | [Español](README.es.md) | Tiếng Việt
 
-[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/FoundationAgents/foundation-protocol)](https://github.com/FoundationAgents/foundation-protocol) [![License](https://img.shields.io/github/license/FoundationAgents/foundation-protocol)](LICENSE) [![arXiv](https://img.shields.io/badge/arXiv-2605.23218-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.23218) [![HuggingFace](https://img.shields.io/badge/🤗-Paper-yellow)](https://huggingface.co/papers/2605.23218)
 
 Runtime Python cho cộng tác AI đa thực thể — agent, con người và công cụ hoạt động trên một lớp giao thức chung.
 
@@ -15,6 +15,10 @@ Runtime Python cho cộng tác AI đa thực thể — agent, con người và c
 - **Chính sách và quản trị** — hook checkpoint với ghi nhận nguồn gốc cho tin cậy và kiểm soát truy cập
 - **Giao dịch và thanh toán** — hợp đồng, ký quỹ, quyết toán và giải quyết tranh chấp qua máy trạng thái
 - **Liên bang** — định tuyến thực thể cục bộ và từ xa qua các node host phân tán
+
+## Tuyên ngôn
+
+https://github.com/user-attachments/assets/ceab2515-b8f2-47ec-8d7f-10452759c32a
 
 ## Cài đặt
 
