@@ -22,10 +22,16 @@ https://github.com/user-attachments/assets/ceab2515-b8f2-47ec-8d7f-10452759c32a
 
 ## インストール
 
-公開パッケージをインストール：
+推奨：PyPIから安定版をインストール：
 
 ```bash
 pip install foundation-protocol
+```
+
+開発者はGitHubの最新ソースもインストールできます：
+
+```bash
+pip install "foundation-protocol @ git+https://github.com/FoundationAgents/foundation-protocol.git"
 ```
 
 ## 使い方
