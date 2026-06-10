@@ -22,10 +22,10 @@ https://github.com/user-attachments/assets/ceab2515-b8f2-47ec-8d7f-10452759c32a
 
 ## 安装
 
-作为 git 依赖安装：
+安装正式发布包：
 
 ```bash
-pip install "foundation-protocol @ git+https://github.com/FoundationAgents/foundation-protocol.git"
+pip install foundation-protocol
 ```
 
 ## 使用

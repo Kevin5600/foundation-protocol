@@ -22,10 +22,10 @@ https://github.com/user-attachments/assets/ceab2515-b8f2-47ec-8d7f-10452759c32a
 
 ## 설치
 
-git 의존성으로 설치:
+배포된 패키지 설치:
 
 ```bash
-pip install "foundation-protocol @ git+https://github.com/FoundationAgents/foundation-protocol.git"
+pip install foundation-protocol
 ```
 
 ## 사용법

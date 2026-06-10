@@ -22,10 +22,10 @@ https://github.com/user-attachments/assets/ceab2515-b8f2-47ec-8d7f-10452759c32a
 
 ## インストール
 
-git依存としてインストール：
+公開パッケージをインストール：
 
 ```bash
-pip install "foundation-protocol @ git+https://github.com/FoundationAgents/foundation-protocol.git"
+pip install foundation-protocol
 ```
 
 ## 使い方
